@@ -20,38 +20,58 @@
             <div class="container-fluid">
               <a class="navbar-brand fs-3">Signos del zoodiaco</a>
               <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Buscar</button>
+                <input class="form-control me-2 p-1" type="search" placeholder="Ingresar fecha de nacimiento" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">¿Que signo soy?</button>
               </form>
             </div>
           </nav>
 
-            <div class="d-flex flex-wrap justify-content-center align-content-center">
+            <div class="d-flex flex-wrap justify-content-center align-content-center mb-3" id="modal">
 
-                <button class="btn btn-image" type="button"><img src="/images/signos/aquarius.jpg" id="aquarius" alt="signo aquarius"></button> 
+                <button class="btn btn-image" value="aquarius" type="button"><img src="/images/signos/aquarius.jpg" id="aquarius" alt="Signo aquarius"></button> 
 
-                <button class="btn btn-image" type="button"><img src="/images/signos/cancer.jpg" id="cancer" alt="signo cancer"></button> 
+                <button class="btn btn-image" type="button"><img src="/images/signos/cancer.jpg" id="cancer" alt="Signo cancer"></button> 
 
-                <button class="btn btn-image" type="button"><img src="/images/signos/aries.jpg" id="aries" alt="signo aries"></button> 
+                <button class="btn btn-image" type="button"><img src="/images/signos/aries.jpg" id="aries" alt="Signo aries"></button> 
 
-                <button class="btn btn-image" type="button"><img src="/images/signos/capricornio.jpg" id="capricornio" alt="signo capricornio"></button> 
+                <button class="btn btn-image" type="button"><img src="/images/signos/capricornio.jpg" id="capricornio" alt="Signo capricornio"></button> 
 
-                <button class="btn btn-image" type="button"><img src="/images/signos/geminis.jpg" id="geminis" alt="signo geminis"></button> 
+                <button class="btn btn-image" type="button"><img src="/images/signos/geminis.jpg" id="geminis" alt="Signo geminis"></button> 
 
-                <button class="btn btn-image" type="button"><img src="/images/signos/leo.jpg" id="leo" alt="signo leo"></button> 
+                <button class="btn btn-image" type="button"><img src="/images/signos/leo.jpg" id="leo" alt="Signo leo"></button> 
 
-                <button class="btn btn-image" type="button"><img src="/images/signos/libra.jpg" id="libra" alt="signo libra"></button> 
+                <button class="btn btn-image" type="button"><img src="/images/signos/libra.jpg" id="libra" alt="Signo libra"></button> 
 
-                <button class="btn btn-image" type="button"><img src="/images/signos/piscis.jpg" id="piscis" alt="signo piscis"></button> 
+                <button class="btn btn-image" type="button"><img src="/images/signos/piscis.jpg" id="piscis" alt="Signo piscis"></button> 
 
-                <button class="btn btn-image" type="button"><img src="/images/signos/sagitario.jpg" id="sagitario" alt="signo sagitario"></button> 
+                <button class="btn btn-image" type="button"><img src="/images/signos/sagitario.jpg" id="sagitario" alt="Signo sagitario"></button> 
 
-                <button class="btn btn-image" type="button"><img src="/images/signos/scorpio.jpg" id="scorpio" alt="signo scorpio"></button> 
+                <button class="btn btn-image" type="button"><img src="/images/signos/scorpio.jpg" id="scorpio" alt="signo Scorpio"></button> 
 
-                <button class="btn btn-image" type="button"><img src="/images/signos/taurus.jpg" id="taurus" alt="signo taurus"></button> 
+                <button class="btn btn-image" type="button"><img src="/images/signos/taurus.jpg" id="taurus" alt="signo Taurus"></button> 
 
-                <button class="btn btn-image" type="button"><img src="/images/signos/virgo.jpg" id="virgo" alt="signo virgo"></button> 
+                <button class="btn btn-image" type="button"><img src="/images/signos/virgo.jpg" id="virgo" alt="signo Virgo"></button> 
             </div>
+
+             <!-- Modal para administrar signos del zoodiaco-->
+             <div class="modal fade" id="modalSigno" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="tituloModal">Signo del zodiaco</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <p  id="descripcionModal">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam ratione quis dignissimos vel quas incidunt neque dolor cumque facilis magnam, placeat ad iusto excepturi deleniti magni voluptatibus illo ipsum quia ex aperiam quibusdam temporibus ut! Unde dolore amet praesentium aperiam tempora nesciunt repellendus beatae suscipit velit minus. Animi officia necessitatibus omnis dolorem fugit nemo delectus hic, repellat temporibus molestias iure nam non dolorum eligendi atque quod ullam ducimus quam quos rerum odit nobis minus amet nostrum. Reprehenderit, error deserunt earum libero sed officia laudantium, dignissimos inventore explicabo exercitationem ratione fugiat cupiditate quam, dolores eligendi. Incidunt, sit illum placeat illo, ducimus porro obcaecati veritatis asperiores fugit autem odit ea assumenda consequuntur nisi tempora voluptate eum sapiente saepe. Quos iusto officia rerum quaerat possimus tempore qui est veniam labore minus ex sint, voluptatibus alias asperiores reiciendis, pariatur beatae quisquam, obcaecati odio quas repellendus corrupti vel nostrum! Error laudantium cupiditate necessitatibus, numquam quae ab fugit iusto tempore consectetur, aut sapiente natus cum, commodi magnam molestias saepe modi nemo ipsam. Maxime cum necessitatibus consequatur itaque non delectus exercitationem perspiciatis, dolorem quaerat dicta quos voluptatem blanditiis magnam hic magni, est accusamus voluptas quia cumque! Vero, ullam ab nostrum repudiandae totam, saepe officiis quod iste fugit voluptatibus vitae asperiores est ratione magnam? Unde officiis illo alias consequuntur ipsa dolor porro, possimus exercitationem quod facere molestiae quo! Omnis perferendis consectetur libero debitis! Ab voluptatum repudiandae quaerat sunt id ut debitis eligendi est omnis provident quam eveniet perspiciatis eum facilis temporibus facere obcaecati quae enim ducimus dicta at adipisci distinctio, sapiente aut? Reprehenderit ex ullam quae voluptatem, quo vel ipsa repellendus quasi quos perferendis deserunt nam explicabo itaque quisquam quas inventore a distinctio illo esse facilis dolores pariatur consequuntur. Tenetur reiciendis, quaerat voluptatibus quia quis numquam veniam deserunt iusto enim minima dolores totam. Incidunt facilis libero architecto? Odit.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+                
+
 
             <footer class="bg-dark text-light py-4 text-center">
                 <p>&copy; Todos los derechos reservados</p>
