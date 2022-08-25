@@ -1,1 +1,29 @@
-/*# sourceMappingURL=styles.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100vh;
+}
+
+img {
+  width: 18rem;
+  overflow: hidden;
+}
+
+.btn-image {
+  border: none;
+}
+
+.btn-image:hover {
+  transform: scale(1.1);
+  transition: 0.6s;
+  z-index: 1;
+  border: none;
+}
+
+.btn-image:active, .btn-image:focus, .btn-image:visited {
+  border: none;
+}/*# sourceMappingURL=styles.css.map */

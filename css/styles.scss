@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    height: 100vh;
+}
+
+img{
+    width: 18rem;
+    overflow: hidden;
+}
+
+.btn-image{
+    border: none
+}
+.btn-image:hover{
+    -webkit-transform:scale(1.2);transform:scale(1.1);
+    transition: .6s;
+    z-index: 1;
+    border: none;
+}
+.btn-image:active, .btn-image:focus, .btn-image:visited{
+    border: none;
+}
+
