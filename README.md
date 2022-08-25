@@ -13,3 +13,5 @@ El sitio debe ser 100% responsive
 Todos los botones del sitio deben tener funcionalidad usando conceptos de DOM
 El diseño queda a gusto de cada equipo
 publicar el proyecto en netlify
+
+informacion sacada de https://www.diariodesevilla.es/wappissima/horoscopo/caracteristicas-signo-Zodiaco_0_1287171812.html
