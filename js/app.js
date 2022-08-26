@@ -124,14 +124,69 @@ const aire = document.getElementById("aire")
 const agua = document.getElementById("agua")
 const tierra = document.getElementById("tierra")
 const fuego = document.getElementById("fuego")
+const card = document.querySelector(".card")
 
 aire.addEventListener("click", () => {cardElementos(aire)})
 agua.addEventListener("click", () => {cardElementos(agua)})
 tierra.addEventListener("click", () => {cardElementos(tierra)})
 fuego.addEventListener("click", () => {cardElementos(fuego)})
 
-function cardElementos(id){
-  console.log("hola")
-}
 
+function cardElementos(id){
+    card.className = "card mb-2 mt-2 "
+
+    if(id.id == "fuego"){
+    card.innerHTML = `
+    <div class="card-tittle text-center link-fuego mt-2">${id.id.toUpperCase()}</div>
+    <div class="card-body">
+    <p class="card-title">Signos de fuego:</p>
+    <ul>
+    <li><a class="link-fuego" href="#">Aries</a></li>
+    <li><a class="link-fuego" href="#">Leo</a></li>
+    <li><a class="link-fuego" href="#">Sagitario</a></li>
+    </ul>
+    </div>
+    `
+    }
+    if(id.id == "agua"){
+      card.innerHTML = `
+      <div class="card-tittle text-center link-agua mt-2">${id.id.toUpperCase()}</div>
+      <div class="card-body">
+      <p class="card-title">Signos de agua:</p>
+      <ul>
+      <li><a class="link-agua" href="#">Cancer</a></li>
+      <li><a class="link-agua" href="#">Escorpio</a></li>
+      <li><a class="link-agua" href="#">Piscis</a></li>
+      </ul>
+      </div>
+      `
+      }
+      if(id.id == "aire"){
+        card.innerHTML = `
+        <div class="card-tittle text-center link-aire mt-2">${id.id.toUpperCase()}</div>
+        <div class="card-body">
+        <p class="card-title">Signos de aire:</p>
+        <ul>
+        <li><a class="link-aire" href="#">Geminis</a></li>
+        <li><a class="link-aire" href="#">Libra</a></li>
+        <li><a class="link-aire" href="#">Acuario</a></li>
+        </ul>
+        </div>
+        `
+        }
+        if(id.id == "tierra"){
+          card.innerHTML = `
+          <div class="card-tittle text-center link-tierra mt-2">${id.id.toUpperCase()}</div>
+          <div class="card-body">
+          <p class="card-title">Signos de tierra:</p>
+          <ul>
+          <li><a class="link-tierra" href="#">Tauro</a></li>
+          <li><a class="link-tierra" href="#">Virgo</a></li>
+          <li><a class="link-tierra" href="#">Capricornio</a></li>
+          </ul>
+          </div>
+          `
+          }
+}
+// Signos de Fuego: Aries, Leo y Sagitario.
 
