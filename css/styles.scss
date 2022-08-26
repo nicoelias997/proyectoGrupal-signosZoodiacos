@@ -25,3 +25,11 @@ img{
     border: none;
 }
 
+.btn-element{
+    border: none;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+.btn-element:active, .btn-image:focus, .btn-image:visited{
+    border: none;
+}

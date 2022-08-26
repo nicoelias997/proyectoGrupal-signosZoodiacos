@@ -26,4 +26,13 @@ img {
 
 .btn-image:active, .btn-image:focus, .btn-image:visited {
   border: none;
+}
+
+.btn-element {
+  border: none;
+  filter: grayscale(100%);
+}
+
+.btn-element:active, .btn-image:focus, .btn-image:visited {
+  border: none;
 }/*# sourceMappingURL=styles.css.map */

@@ -14,17 +14,50 @@
     <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
-    <div class="container-fluid">
-        
-        <nav class="navbar bg-light mb-2 ">
-            <div class="container-fluid">
-              <a class="navbar-brand fs-3">Signos del zoodiaco</a>
-              <form class="d-flex" role="search">
-                <input class="form-control me-2 p-1" type="search" placeholder="Ingresar fecha de nacimiento" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">¿Que signo soy?</button>
-              </form>
-            </div>
-          </nav>
+
+    <div class="container-fluid"> 
+       
+    <nav class="navbar bg-light mb-3" id="nav">
+  <div class="container-fluid">
+    <div class="d-flex">
+      <button class="navbar-toggler me-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    <a class="navbar-brand fs-3">Signos del zoodiaco</a> 
+    </div>
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Otras caracteristicas</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">      
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle mb-2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+             ELEMENTOS
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" id="fuego">Fuego</a></li>
+              <li><a class="dropdown-item" id="tierra">Tierra</a></li>
+              <li><a class="dropdown-item" id="aire">Aire</a></li>
+              <li><a class="dropdown-item" id="agua">Agua</a></li>        
+            </ul>
+          </li>
+        </ul>
+
+        <form class="d-flex" role="search">
+          <input class="form-control me-2 p-1" type="search" placeholder="Ingresar fecha de nacimiento" aria-label="Search">
+          <button class="btn btn-outline-dark" type="submit">¿Que signo soy?</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+
+         
 
             <div class="d-flex flex-wrap justify-content-center align-content-center mb-3" id="modal">
 
@@ -62,7 +95,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div class="modal-body">
-                    <p  id="descripcionModal">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam ratione quis dignissimos vel quas incidunt neque dolor cumque facilis magnam, placeat ad iusto excepturi deleniti magni voluptatibus illo ipsum quia ex aperiam quibusdam temporibus ut! Unde dolore amet praesentium aperiam tempora nesciunt repellendus beatae suscipit velit minus. Animi officia necessitatibus omnis dolorem fugit nemo delectus hic, repellat temporibus molestias iure nam non dolorum eligendi atque quod ullam ducimus quam quos rerum odit nobis minus amet nostrum. Reprehenderit, error deserunt earum libero sed officia laudantium, dignissimos inventore explicabo exercitationem ratione fugiat cupiditate quam, dolores eligendi. Incidunt, sit illum placeat illo, ducimus porro obcaecati veritatis asperiores fugit autem odit ea assumenda consequuntur nisi tempora voluptate eum sapiente saepe. Quos iusto officia rerum quaerat possimus tempore qui est veniam labore minus ex sint, voluptatibus alias asperiores reiciendis, pariatur beatae quisquam, obcaecati odio quas repellendus corrupti vel nostrum! Error laudantium cupiditate necessitatibus, numquam quae ab fugit iusto tempore consectetur, aut sapiente natus cum, commodi magnam molestias saepe modi nemo ipsam. Maxime cum necessitatibus consequatur itaque non delectus exercitationem perspiciatis, dolorem quaerat dicta quos voluptatem blanditiis magnam hic magni, est accusamus voluptas quia cumque! Vero, ullam ab nostrum repudiandae totam, saepe officiis quod iste fugit voluptatibus vitae asperiores est ratione magnam? Unde officiis illo alias consequuntur ipsa dolor porro, possimus exercitationem quod facere molestiae quo! Omnis perferendis consectetur libero debitis! Ab voluptatum repudiandae quaerat sunt id ut debitis eligendi est omnis provident quam eveniet perspiciatis eum facilis temporibus facere obcaecati quae enim ducimus dicta at adipisci distinctio, sapiente aut? Reprehenderit ex ullam quae voluptatem, quo vel ipsa repellendus quasi quos perferendis deserunt nam explicabo itaque quisquam quas inventore a distinctio illo esse facilis dolores pariatur consequuntur. Tenetur reiciendis, quaerat voluptatibus quia quis numquam veniam deserunt iusto enim minima dolores totam. Incidunt facilis libero architecto? Odit.</p>
+                    <p  id="descripcionModal">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam ratione quis dignissimos vel quas incidunt neque dolor cumque facilis magnam, placeat ad iusto excepturi deleniti magni voluptatibus illo ipsum quia ex aperiam quibusdam temporibus ut! Unde dolore amet praesentium aperiam tempora nesciunt repellendus beatae suscipit velit minus. Animi officia necessitatibus omnis dolorem fugit nemo delectus hic, repellat temporibus molestias iure nam non dolorum eligendi atque quod ullam ducimus quam quos rerum odit nobis minus amet nostrum. Reprehenderit, error deserunt earum libero sed officia laudantium, dignissimos inventore explicabo exercitationem ratione fugiat cupiditate quam, dolores eligendi. Incidunt, sit illum placeat illo, ducimus porro obcaecati veritatis asperiores fugit autem odit ea assumenda consequuntur nisi tempora voluptate eum sapiente saepe. Quos iusto officia rerum quaerat possimus tempore qui est veniam labore minus ex sint, voluptatibus alias asperiores reiciendis, pariatur beatae quisquam, obcaecati odio quas repellendus corrupti vel nostrum! Error laudantium </p>
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -70,16 +103,16 @@
                 </div>
               </div>
             </div>
-                
 
-
-            <footer class="bg-dark text-light py-4 text-center">
-                <p>&copy; Todos los derechos reservados</p>
+            <footer>
+            <div class="bg-dark text-light py-4 text-center">
+              <p>&copy; Todos los derechos reservados</p>
+            </div>
             </footer>
     </div>
        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
        <script src="/js/app.js"></script>
        <script src="https://cdn.jsdelivr.net/npm/uuid@latest/dist/umd/uuidv4.min.js"></script>
-    <script src="./js/modales.js" type="module"></script>
+    <script src="https://kit.fontawesome.com/f9598fe670.js" crossorigin="anonymous"></script>
 </body>
 </html>
