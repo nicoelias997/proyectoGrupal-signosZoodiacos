@@ -28,8 +28,6 @@ let modal = new bootstrap.Modal(document.querySelector("#modalSigno"))
 let tituloModal = document.getElementById("tituloModal");
 let descripcionModal = document.getElementById("descripcionModal");
 
-
-
 function ventanaModal(id){
 
         modal.show() 
@@ -120,6 +118,20 @@ function ventanaModal(id){
         }
         
 
+}
+
+const aire = document.getElementById("aire")
+const agua = document.getElementById("agua")
+const tierra = document.getElementById("tierra")
+const fuego = document.getElementById("fuego")
+
+aire.addEventListener("click", () => {cardElementos(aire)})
+agua.addEventListener("click", () => {cardElementos(agua)})
+tierra.addEventListener("click", () => {cardElementos(tierra)})
+fuego.addEventListener("click", () => {cardElementos(fuego)})
+
+function cardElementos(id){
+  console.log("hola")
 }
 
 
