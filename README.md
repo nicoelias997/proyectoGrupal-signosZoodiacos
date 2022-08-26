@@ -14,4 +14,8 @@ Todos los botones del sitio deben tener funcionalidad usando conceptos de DOM
 El diseño queda a gusto de cada equipo
 publicar el proyecto en netlify
 
-informacion sacada de https://www.diariodesevilla.es/wappissima/horoscopo/caracteristicas-signo-Zodiaco_0_1287171812.html
+informacion acerca de los signos sacada de de https://www.diariodesevilla.es/wappissima/horoscopo/caracteristicas-signo-Zodiaco_0_1287171812.html
+
+informacion acerca de los elementos y su naturaleza sacada de https://www.univision.com/estilo-de-vida/bienestar/signos-de-fuego-aire-tierra-y-agua-conoce-las-diferencias-entre-los-elementos
+
+
