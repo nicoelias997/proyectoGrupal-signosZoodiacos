@@ -210,5 +210,151 @@ function cardElementos(id){
           `
           }
 }
-// Signos de Fuego: Aries, Leo y Sagitario.
+
+const botonQSigno = document.querySelector("#btn-qSigno")
+const fecha = document.querySelector("#fecha")
+
+botonQSigno.addEventListener("click", ()=>{queSignoSoy()})
+
+function queSignoSoy(){
+  let regFecha = /^([012][1-9]|3[01])(\/)(0[1-9]|1[012])\2(\d{4})$/;
+  let dia;
+  let mes;
+    if(regFecha.test(fecha.value)){
+      dia = fecha.value[0] + fecha.value[1]
+      mes = fecha.value[3] + fecha.value[4]
+    let mesDia = mes + dia
+      
+    if(mesDia >= 321 && mesDia <= 419){
+      Swal.fire({
+        title: 'Aries',
+        text: 'Tu signo es Aries.',
+        imageUrl: src='/images/signos/aries.jpg',
+        imageWidth: 300,
+        imageHeight: 300,
+        imageAlt: 'Imagen de Aries',
+      })
+    } 
+    else if(mesDia >= 420 && mesDia <= 521){
+      Swal.fire({
+        title: 'Tauro',
+        text: 'Tu signo es Tauro.',
+        imageUrl: src='/images/signos/taurus.jpg',
+        imageWidth: 300,
+        imageHeight: 300,
+        imageAlt: 'Imagen de tauro',
+      })
+    } 
+   else  if(mesDia >= 521 && mesDia <= 620){
+      Swal.fire({
+        title: 'Geminis',
+        text: 'Tu signo es geminis.',
+        imageUrl: src='/images/signos/geminis.jpg',
+        imageWidth: 300,
+        imageHeight: 300,
+        imageAlt: 'Imagen de geminis',
+      })
+    } 
+  else if(mesDia >= 623 && mesDia <= 722){
+      Swal.fire({
+        title: 'Cancer',
+        text: 'Tu signo es cancer.',
+        imageUrl: src='/images/signos/cancer.jpg',
+        imageWidth: 300,
+        imageHeight: 300,
+        imageAlt: 'Imagen de  cancer',
+      })
+    } 
+   else if(mesDia >= 723 && mesDia <= 822){
+      Swal.fire({
+        title: 'Leo',
+        text: 'Tu signo es leo.',
+        imageUrl: src='/images/signos/leo.jpg',
+        imageWidth: 300,
+        imageHeight: 300,
+        imageAlt: 'Imagen de leo',
+      })
+    } 
+   else if(mesDia >= 823 && mesDia <= 923){
+      Swal.fire({
+        title: 'Virgo',
+        text: 'Tu signo es Virgo.',
+        imageUrl: src='/images/signos/virgo.jpg',
+        imageWidth: 300,
+        imageHeight: 300,
+        imageAlt: 'Imagen de virgo',
+      })
+    } 
+   else if(mesDia >= 924 && mesDia <= 1022){
+      Swal.fire({
+        title: 'Libra',
+        text: 'Tu signo es Libra.',
+        imageUrl: src='/images/signos/libra.jpg',
+        imageWidth: 300,
+        imageHeight: 300,
+        imageAlt: 'Imagen de libra',
+      })
+    } 
+  else  if(mesDia >= 1023 && mesDia <= 1121){
+      Swal.fire({
+        title: 'Escorpio',
+        text: 'Tu signo es Escorpio.',
+        imageUrl: src='/images/signos/scorpio.jpg',
+        imageWidth: 300,
+        imageHeight: 300,
+        imageAlt: 'Imagen de scorpio',
+      })
+    } 
+   else if(mesDia >= 1122 && mesDia <= 1221){
+      Swal.fire({
+        title: 'Sagitario',
+        text: 'Tu signo es Sagitario.',
+        imageUrl: src='/images/signos/sagitario.jpg',
+        imageWidth: 300,
+        imageHeight: 300,
+        imageAlt: 'Imagen de sagitario',
+      })
+    } else if(mesDia <= 119 || mesDia >= 1222){
+      console.log(mesDia) 
+      Swal.fire({
+        title: 'Capricornio',
+        text: 'Tu signo es Capricornio.',
+        imageUrl: src='/images/signos/capricornio.jpg',
+        imageWidth: 300,
+        imageHeight: 300,
+        imageAlt: 'Imagen de capricornio',
+      })
+    } 
+   
+   else if(mesDia >= 120 && mesDia <= 218){
+    console.log(mesDia)
+      Swal.fire({
+        title: 'Acuario',
+        text: 'Tu signo es Acuario.',
+        imageUrl: src='/images/signos/aquarius.jpg',
+        imageWidth: 300,
+        imageHeight: 300,
+        imageAlt: 'Imagen de acuario',
+      })
+    } 
+   else if(mesDia >= 219 && mesDia <= 320){
+      Swal.fire({
+        title: 'Piscis',
+        text: 'Tu signo es Piscis.',
+        imageUrl: src='/images/signos/piscis.jpg',
+        imageWidth: 300,
+        imageHeight: 300,
+        imageAlt: 'Imagen de piscis',
+      })
+    } 
+  }
+  else {
+    Swal.fire({
+      icon: 'error',
+      title: 'Oops...',
+      text: 'Trata dd/mm/aaaa!'
+    })
+  }
+  fecha.value = ""
+}
 
