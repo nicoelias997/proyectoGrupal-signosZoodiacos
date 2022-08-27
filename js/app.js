@@ -124,8 +124,9 @@ const aire = document.getElementById("aire")
 const agua = document.getElementById("agua")
 const tierra = document.getElementById("tierra")
 const fuego = document.getElementById("fuego")
-const card = document.querySelector(".card")
+const card = document.querySelector(".cartaElementos")
 const botonElementos = document.querySelector("#btn-elementos")
+const botonCerrarCanvas = document.querySelector(".btn-cerrarCanvas")
 
 
 aire.addEventListener("click", () => {cardElementos(aire)})
@@ -133,10 +134,11 @@ agua.addEventListener("click", () => {cardElementos(agua)})
 tierra.addEventListener("click", () => {cardElementos(tierra)})
 fuego.addEventListener("click", () => {cardElementos(fuego)})
 
-card.addEventListener("click", ()=> {ocultarCard()})
+botonElementos.addEventListener("click", ()=> {ocultarCard()})
+botonCerrarCanvas.addEventListener("click", ()=> {ocultarCard()})
 
 function ocultarCard(){
-  card.className = "card d-none"
+  card.className = "d-none"
 }
 
 

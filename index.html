@@ -21,23 +21,26 @@
   <div class="container-fluid">
     <div class="d-flex">
       <button class="navbar-toggler me-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon btn-canvas"></span>
       </button>
     <a class="navbar-brand fs-3">Signos del zoodiaco</a> 
     </div>
-
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
       <div class="offcanvas-header">
         <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Otras caracteristicas</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        <button type="button" class="btn-close btn-cerrarCanvas" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
       <div class="offcanvas-body">
+        <form class="d-flex mb-2" role="search">
+          <input class="form-control me-2 p-1" type="search" placeholder="Ingresar fecha de nacimiento" aria-label="Search">
+          <button class="btn btn-outline-dark" type="submit">¿Que signo soy?</button>
+        </form>
         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">      
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle mb-2" id="btn-elementos" role="button" data-bs-toggle="dropdown" aria-expanded="false">
              ELEMENTOS
             </a>
-            <ul class="dropdown-menu">
+            <ul class="dropdown-menu mb-2">
               <li><a class="dropdown-item btn-element" id="fuego">Fuego</a></li>
               <li><a class="dropdown-item btn-element" id="tierra">Tierra</a></li>
               <li><a class="dropdown-item btn-element" id="aire">Aire</a></li>
@@ -45,15 +48,11 @@
             </ul>
           </li>
         </ul>
-
-        <div class="card d-none">
+        <div class="card d-none cartaElementos">
           
         </div>
 
-        <form class="d-flex" role="search">
-          <input class="form-control me-2 p-1" type="search" placeholder="Ingresar fecha de nacimiento" aria-label="Search">
-          <button class="btn btn-outline-dark" type="submit">¿Que signo soy?</button>
-        </form>
+        
       </div>
     </div>
   </div>
