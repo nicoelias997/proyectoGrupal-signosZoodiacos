@@ -125,11 +125,19 @@ const agua = document.getElementById("agua")
 const tierra = document.getElementById("tierra")
 const fuego = document.getElementById("fuego")
 const card = document.querySelector(".card")
+const botonElementos = document.querySelector("#btn-elementos")
+
 
 aire.addEventListener("click", () => {cardElementos(aire)})
 agua.addEventListener("click", () => {cardElementos(agua)})
 tierra.addEventListener("click", () => {cardElementos(tierra)})
 fuego.addEventListener("click", () => {cardElementos(fuego)})
+
+card.addEventListener("click", ()=> {ocultarCard()})
+
+function ocultarCard(){
+  card.className = "card d-none"
+}
 
 
 function cardElementos(id){
@@ -139,12 +147,14 @@ function cardElementos(id){
     card.innerHTML = `
     <div class="card-tittle text-center link-fuego mt-2">${id.id.toUpperCase()}</div>
     <div class="card-body">
-    <p class="card-title">Signos de fuego:</p>
+    <h6 class="card-title">Signos de fuego:</h6>
     <ul>
-    <li><a class="link-fuego" href="#">Aries</a></li>
-    <li><a class="link-fuego" href="#">Leo</a></li>
-    <li><a class="link-fuego" href="#">Sagitario</a></li>
+    <li><a class="link-fuego" href="/index.html">Aries</a></li>
+    <li><a class="link-fuego" href="/index.html">Leo</a></li>
+    <li><a class="link-fuego" href="/index.html">Sagitario</a></li>
     </ul>
+    <h6 class="card-title">Caracteristicas signo fuego:</h6>
+    <p> Es representado por el ánimo, el entusiasmo, la energía, la voluntad y la pasión. El fuego trae la acción, la proactividad, la energía. El placer de vivir, el impulso de la superación y el crecimiento continuo como seres humanos. Pero si lo encontramos en exceso, trae agresividad, irritabilidad, arrogancia, orgullo y vanidad que pueden ser clasificados como los puntos negativos de los signos de fuego.</p>
     </div>
     `
     }
@@ -152,12 +162,14 @@ function cardElementos(id){
       card.innerHTML = `
       <div class="card-tittle text-center link-agua mt-2">${id.id.toUpperCase()}</div>
       <div class="card-body">
-      <p class="card-title">Signos de agua:</p>
+      <h6 class="card-title">Signos de agua:</h6>
       <ul>
-      <li><a class="link-agua" href="#">Cancer</a></li>
-      <li><a class="link-agua" href="#">Escorpio</a></li>
-      <li><a class="link-agua" href="#">Piscis</a></li>
+      <li><a class="link-agua" href="/index.html">Cancer</a></li>
+      <li><a class="link-agua" href="/index.html">Escorpio</a></li>
+      <li><a class="link-agua" href="/index.html">Piscis</a></li>
       </ul>
+      <h6 class="card-title">Caracteristicas signo agua:</h6>
+    <p> Es el sentir, la emoción. No entienden con la mente sino con el corazón. Es la comprensión que va más allá de la mente. En exceso causa actitudes infantiles, caprichos, manipulación, infiltración, vulnerabilidad, inconstancia e inestabilidad.</p>
       </div>
       `
       }
@@ -165,12 +177,15 @@ function cardElementos(id){
         card.innerHTML = `
         <div class="card-tittle text-center link-aire mt-2">${id.id.toUpperCase()}</div>
         <div class="card-body">
-        <p class="card-title">Signos de aire:</p>
+        <h6 class="card-title">Signos de aire:</h6>
         <ul>
-        <li><a class="link-aire" href="#">Geminis</a></li>
-        <li><a class="link-aire" href="#">Libra</a></li>
-        <li><a class="link-aire" href="#">Acuario</a></li>
+        <li><a class="link-aire" href="/index.html">Geminis</a></li>
+        <li><a class="link-aire" href="/index.html">Libra</a></li>
+        <li><a class="link-aire" href="/index.html">Acuario</a></li>
         </ul>
+        <h6 class="card-title">Caracteristicas signo aire:</h6>
+    <p> Representa la mente, el intelecto, la respiración. El aire trae la razón, la comunicación, el entendimiento. El aire representa las ideas, la objetividad, el raciocinio, los intercambios. En exceso nos encontramos con la dispersión, la superficialidad, la frialdad, la indecisión, la rebeldía, el anarquismo, la falsedad y la mentira.</p>
+      </div>
         </div>
         `
         }
@@ -178,12 +193,15 @@ function cardElementos(id){
           card.innerHTML = `
           <div class="card-tittle text-center link-tierra mt-2">${id.id.toUpperCase()}</div>
           <div class="card-body">
-          <p class="card-title">Signos de tierra:</p>
+          <h6 class="card-title">Signos de tierra:</h6>
           <ul>
-          <li><a class="link-tierra" href="#">Tauro</a></li>
-          <li><a class="link-tierra" href="#">Virgo</a></li>
-          <li><a class="link-tierra" href="#">Capricornio</a></li>
+          <li><a class="link-tierra" href="/index.html">Tauro</a></li>
+          <li><a class="link-tierra" href="/index.html">Virgo</a></li>
+          <li><a class="link-tierra" href="/index.html">Capricornio</a></li>
           </ul>
+          <h6 class="card-title">Caracteristicas signo tierra:</h6>
+    <p> Está representado por la materialidad del impulso energético del fuego. La habilidad de concretar cosas, la practicidad y la creatividad son sus características. En exceso trae terquedad, estancamiento, lentitud, rigidez, crítica, escepticismo, crueldad e insensibilidad.
+    </p>
           </div>
           `
           }
