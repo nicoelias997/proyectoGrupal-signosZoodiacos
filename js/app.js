@@ -127,6 +127,7 @@ const fuego = document.getElementById("fuego")
 const card = document.querySelector(".cartaElementos")
 const botonElementos = document.querySelector("#btn-elementos")
 const botonCerrarCanvas = document.querySelector(".btn-cerrarCanvas")
+const pantallaCanvas = document.querySelector("#offcanvasNavbar")
 
 
 aire.addEventListener("click", () => {cardElementos(aire)})
@@ -136,6 +137,7 @@ fuego.addEventListener("click", () => {cardElementos(fuego)})
 
 botonElementos.addEventListener("click", ()=> {ocultarCard()})
 botonCerrarCanvas.addEventListener("click", ()=> {ocultarCard()})
+// pantallaCanvas.addEventListener("click", ()=> {ocultarCard()})
 
 function ocultarCard(){
   card.className = "d-none"
