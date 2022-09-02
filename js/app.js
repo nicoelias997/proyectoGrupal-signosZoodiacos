@@ -141,7 +141,13 @@ botonCerrarCanvas.addEventListener("click", ()=> {ocultarCard()})
 
 function ocultarCard(){
   card.className = "d-none"
+  fecha.value = ""
+
 }
+pantallaCanvas.addEventListener('hidden.bs.offcanvas', () => {
+  card.className = "d-none"
+  fecha.value = ""
+})
 
 
 function cardElementos(id){
