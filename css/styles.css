@@ -1,1 +1,77 @@
-/*# sourceMappingURL=styles.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100vh;
+}
+
+img {
+  width: 18rem;
+  overflow: hidden;
+}
+
+.btn-image {
+  border: none;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.btn-image:hover {
+  transform: scale(1.1);
+  transition: 0.6s;
+  z-index: 1;
+  border: none;
+}
+
+.btn-image:active, .btn-image:focus, .btn-image:visited {
+  border: none;
+}
+
+.btn-element {
+  filter: grayscale(100%);
+}
+
+.link-fuego {
+  color: black;
+  text-decoration: none;
+}
+
+.link-fuego:visited, .link-fuego:active, .link-fuego:hover {
+  color: red;
+  text-decoration: none;
+}
+
+.link-tierra {
+  color: black;
+  text-decoration: none;
+}
+
+.link-tierra:visited, .link-tierra:active, .link-tierra:hover {
+  color: brown;
+  text-decoration: none;
+}
+
+.link-aire {
+  color: black;
+  text-decoration: none;
+}
+
+.link-aire:visited, .link-aire:active, .link-aire:hover {
+  color: green;
+  text-decoration: none;
+}
+
+.link-agua {
+  color: black;
+  text-decoration: none;
+}
+
+.link-agua:visited, .link-agua:active, .link-agua:hover {
+  color: blue;
+  text-decoration: none;
+}/*# sourceMappingURL=styles.css.map */

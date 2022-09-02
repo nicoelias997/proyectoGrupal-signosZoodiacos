@@ -4,12 +4,118 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Signos zoodiacales</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
-    
+
+    <div class="container-fluid"> 
+       
+    <nav class="navbar bg-light mb-3" id="nav">
+  <div class="container-fluid">
+    <div class="d-flex">
+      <button class="navbar-toggler me-3 btn-canvas" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon btn-canvas"></span>
+      </button>
+    <a class="navbar-brand fs-3">Signos del zoodiaco</a> 
+    </div>
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Otras caracteristicas</h5>
+        <button type="button" class="btn-close btn-cerrarCanvas" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <form class="d-flex mb-2" role="search">
+          <input class="form-control me-2 p-1" id="fecha" type="search" placeholder="Ingresar fecha de nacimiento" aria-label="Search">
+          <button class="btn btn-outline-dark" id="btn-qSigno" type="button">¿Que signo soy?</button>
+        </form>
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">      
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle mb-2" id="btn-elementos" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+             ELEMENTOS
+            </a>
+            <ul class="dropdown-menu mb-2">
+              <li><a class="dropdown-item btn-element" id="fuego">Fuego</a></li>
+              <li><a class="dropdown-item btn-element" id="tierra">Tierra</a></li>
+              <li><a class="dropdown-item btn-element" id="aire">Aire</a></li>
+              <li><a class="dropdown-item btn-element" id="agua">Agua</a></li>        
+            </ul>
+          </li>
+        </ul>
+        <div class="card d-none cartaElementos">
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+
+         
+
+            <div class="d-flex flex-wrap justify-content-center align-content-center mb-3" id="modal">
+
+                <button class="btn btn-image" value="aquarius" type="button"><img src="/images/signos/aquarius.jpg" id="aquarius" alt="Signo aquarius"></button> 
+
+                <button class="btn btn-image" type="button"><img src="/images/signos/cancer.jpg" id="cancer" alt="Signo cancer"></button> 
+
+                <button class="btn btn-image" type="button"><img src="/images/signos/aries.jpg" id="aries" alt="Signo aries"></button> 
+
+                <button class="btn btn-image" type="button"><img src="/images/signos/capricornio.jpg" id="capricornio" alt="Signo capricornio"></button> 
+
+                <button class="btn btn-image" type="button"><img src="/images/signos/geminis.jpg" id="geminis" alt="Signo geminis"></button> 
+
+                <button class="btn btn-image" type="button"><img src="/images/signos/leo.jpg" id="leo" alt="Signo leo"></button> 
+
+                <button class="btn btn-image" type="button"><img src="/images/signos/libra.jpg" id="libra" alt="Signo libra"></button> 
+
+                <button class="btn btn-image" type="button"><img src="/images/signos/piscis.jpg" id="piscis" alt="Signo piscis"></button> 
+
+                <button class="btn btn-image" type="button"><img src="/images/signos/sagitario.jpg" id="sagitario" alt="Signo sagitario"></button> 
+
+                <button class="btn btn-image" type="button"><img src="/images/signos/scorpio.jpg" id="scorpio" alt="signo Scorpio"></button> 
+
+                <button class="btn btn-image" type="button"><img src="/images/signos/taurus.jpg" id="taurus" alt="signo Taurus"></button> 
+
+                <button class="btn btn-image" type="button"><img src="/images/signos/virgo.jpg" id="virgo" alt="signo Virgo"></button> 
+            </div>
+
+             <!-- Modal para administrar signos del zoodiaco-->
+             <div class="modal fade" id="modalSigno" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="tituloModal">Signo del zodiaco</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <p  id="descripcionModal">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam ratione quis dignissimos vel quas incidunt neque dolor cumque facilis magnam, placeat ad iusto excepturi deleniti magni voluptatibus illo ipsum quia ex aperiam quibusdam temporibus ut! Unde dolore amet praesentium aperiam tempora nesciunt repellendus beatae suscipit velit minus. Animi officia necessitatibus omnis dolorem fugit nemo delectus hic, repellat temporibus molestias iure nam non dolorum eligendi atque quod ullam ducimus quam quos rerum odit nobis minus amet nostrum. Reprehenderit, error deserunt earum libero sed officia laudantium, dignissimos inventore explicabo exercitationem ratione fugiat cupiditate quam, dolores eligendi. Incidunt, sit illum placeat illo, ducimus porro obcaecati veritatis asperiores fugit autem odit ea assumenda consequuntur nisi tempora voluptate eum sapiente saepe. Quos iusto officia rerum quaerat possimus tempore qui est veniam labore minus ex sint, voluptatibus alias asperiores reiciendis, pariatur beatae quisquam, obcaecati odio quas repellendus corrupti vel nostrum! Error laudantium </p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <footer>
+            <div class="bg-dark text-light py-4 text-center">
+              <p>&copy; Todos los derechos reservados</p>
+            </div>
+            </footer>
+    </div>
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+       <script src="/js/app.js"></script>
+       <script src="https://cdn.jsdelivr.net/npm/uuid@latest/dist/umd/uuidv4.min.js"></script>
+    <script src="https://kit.fontawesome.com/f9598fe670.js" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>
